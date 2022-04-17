@@ -1,9 +1,9 @@
-import React, {useRef, useState} from "react";
+import React, {useRef} from "react";
 import Webcam from "react-webcam";
-import User from "./User";
+
 
 export default function App() {
-  const [login, setLogin] = useState(false);
+
   const webRef = useRef()
 
 const handleSend = async() => {
