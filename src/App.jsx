@@ -31,12 +31,12 @@ const handleSend = async() => {
     },
     body: JSON.stringify(user)
   };
-  const BASE_URL = 'http://19dd-94-158-59-112.ngrok.io'
+  const BASE_URL = 'https://19dd-94-158-59-112.ngrok.io'
   await fetch(`${BASE_URL}/api/auth/`, requestOptions)
     .then((data) => {
         if(data.status===200){
           let user={
-            token:'',
+            token:'', 
             username:'asd'
           }
           console.log(user)
