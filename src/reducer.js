@@ -1,6 +1,6 @@
-export const reducer=(state,payload)=>{
+export const reducer=(state,{type,payload})=>{
     console.log(payload)
-    switch(payload.type){
+    switch(type){
         case 'ADDED_USER' :
             return {
                 ...state,
