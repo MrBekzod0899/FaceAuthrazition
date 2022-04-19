@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { MyContext } from '.';
+import { MyContext } from './index';
 export default function User() {
  const user=useContext(MyContext)
  console.log(user)
