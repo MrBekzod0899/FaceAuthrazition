@@ -1,16 +1,18 @@
 import React from "react";
 import Webcam from "react-webcam";
-export default function Camera({handleSend,webRef}) {
+export default function Camera({handleSend,webRef,isUserId}) {
   return (
     <>
       <div className="main card bg-secondary">
         <div className="camera">
-          <Webcam
+          
+          { isUserId && <Webcam
             mirrored={true}
             ref={webRef}
             screenshotFormat="image/jpg"
             id="webcam"
-          />
+          /> 
+          }
         </div>
         <input
           className="form-control  mt-2"

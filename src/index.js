@@ -13,9 +13,9 @@ export const MyContext=React.createContext()
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-  <MyContext.Provider value={user}>
-    <Router />
-  </MyContext.Provider>
+    <MyContext.Provider value={user}>
+      <Router />
+    </MyContext.Provider>
   </BrowserRouter>
 
 );
